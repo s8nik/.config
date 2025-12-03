@@ -1,0 +1,27 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/vesper.toml"
+]
+
+[window]
+padding = { x = 2, y = 2 }
+decorations = "None"
+opacity = 1.0
+
+[scrolling]
+history = 15000
+
+[font]
+normal = { family = "JetBrains Mono", style = "Regular" }
+bold  = { family = "JetBrains Mono", style = "Bold" }
+italic = { family = "JetBrains Mono", style = "Italic" }
+bold_italic = { family = "JetBrains Mono", style = "Bold Italic" }
+size = 12
+offset = { x = 0, y = 0 }
+glyph_offset = { x = 0, y = 0 }
+
+[selection]
+save_to_clipboard = true
+
+[terminal]
+shell = "fish"

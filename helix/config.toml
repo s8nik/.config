@@ -1,0 +1,4 @@
+theme = "vesper"
+
+[keys.insert]
+j = { k = "normal_mode" }

@@ -1,0 +1,124 @@
+@define-color black        #101010;
+@define-color white        #ffffff;
+@define-color grey         #7e7e7e;
+@define-color red          #f5a191;
+@define-color green        #90b99f;
+@define-color yellow       #e6b99d;
+@define-color blue         #aca1cf;
+@define-color magenta      #e29eca;
+@define-color cyan         #ea83a5;
+@define-color dark-white   #a0a0a0;
+@define-color dark-blue    #1e1e2e;
+@define-color bright-green #99ffe4;
+@define-color bright-blue  #b9aeda;
+
+* {
+  min-height: 0;
+  min-width: 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+window#waybar {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: @black;
+}
+
+#workspaces button {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 2px;
+  background-color: @dark-blue;
+  color: @dark-white;
+}
+
+#workspaces button.focused {
+  color: @bright-green;
+  background-color: @dark-blue;
+}
+
+#clock,
+#pulseaudio,
+#backlight,
+#custom-logo,
+#custom-power,
+#custom-notification,
+#temperature,
+#cpu,
+#tray,
+#memory,
+#battery,
+#network,
+#window {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 2px;
+  background-color: @dark-blue;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+#cpu {
+  color: @blue;
+}
+
+#memory {
+  color: @magenta;
+}
+
+#clock {
+  color: @dark-white;
+}
+
+#window {
+  color: @white;
+}
+
+#pulseaudio {
+  color: @bright-blue;
+}
+
+#pulseaudio.muted {
+  color: @dark-white;
+}
+
+#custom-power {
+  color: @grey;
+}
+
+#backlight {
+  color: @yellow;
+}
+
+#battery {
+  color: @green;
+}
+
+#battery.critical:not(.charging) {
+  color: @red;
+}
+
+#battery.warning:not(.charging) {
+  color: @yellow;
+}
+
+#temperature {
+  color: @white;
+}
+
+#temperature.critical {
+  color: @red;
+}
+
+#network {
+  color: @cyan;
+}
+
+tooltip {
+  background-color: @black;
+  border: 2px solid @bright-green;
+}

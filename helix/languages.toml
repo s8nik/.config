@@ -1,0 +1,18 @@
+[[language]]
+name = "python"
+language-servers = ["pylsp", "ruff"]
+auto-format = true
+scope = "source.python"
+
+[language.formatter]
+command = "ruff"
+args = ["format", "-"]
+
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
+
+[language-server.pylsp.config.pylsp.plugins]
+pylsp_mypy.enabled = true
+pylsp_mypy.live_mode = true
+rope_autoimport.enabled = true
