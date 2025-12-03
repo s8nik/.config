@@ -1,0 +1,13 @@
+[SddmGreeterTheme]
+Name=custom
+Description=custom
+Author=s8nik
+License=MIT
+Type=sddm-theme
+Version=1.3
+ConfigFile=theme.conf
+MainScript=Main.qml
+TranslationsDirectory=translations
+Theme-Id=custom
+Theme-API=2.2
+QtVersion=6

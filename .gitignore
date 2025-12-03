@@ -23,3 +23,10 @@
 !waybar/
 !waybar/config
 !waybar/style.css
+
+!sddm/
+!sddm/Main.qml
+!sddm/theme.conf
+!sddm/metadata.desktop
+!sddm/UsersChoose.qml
+!sddm/SessionsChoose.qml
